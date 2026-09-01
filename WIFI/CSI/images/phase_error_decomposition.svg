@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="620" viewBox="0 0 1100 620">
+  <defs><style>text{font-family:'Microsoft YaHei','Noto Sans CJK SC',sans-serif;fill:#173b57}.t{font-size:28px;font-weight:700}.l{font-size:19px}.n{font-size:16px;fill:#52697b}.axis{stroke:#52697b;stroke-width:2}.true{stroke:#0b84a5;stroke-width:4;fill:none}.slope{stroke:#f26b38;stroke-width:4;fill:none}.meas{stroke:#7c4dff;stroke-width:5;fill:none}</style></defs>
+  <rect width="1100" height="620" fill="#fbfdff"/><text x="550" y="42" text-anchor="middle" class="t">测量相位 = 信道结构 + 公共旋转 + 线性斜坡 + 噪声</text>
+  <g transform="translate(75,100)"><line x1="0" y1="330" x2="930" y2="330" class="axis"/><line x1="0" y1="10" x2="0" y2="350" class="axis"/>
+    <path d="M0 250 C90 220 150 275 240 235 C330 195 390 255 480 205 C570 165 650 210 735 170 C820 130 875 160 930 135" class="true"/>
+    <path d="M0 280 L930 70" class="slope" stroke-dasharray="10 8"/>
+    <path d="M0 180 C55 125 105 215 165 145 C230 75 285 190 350 115 C420 40 475 145 545 75 C620 5 690 115 755 45 C825 -5 875 65 930 25" class="meas"/>
+    <text x="675" y="215" class="l" fill="#0b84a5">真实有效信道相位结构</text><text x="650" y="95" class="l" fill="#f26b38">αk：SFO/PDD 线性项</text><text x="555" y="25" class="l" fill="#7c4dff">原始测量相位（含 φ₀）</text>
+    <text x="465" y="375" text-anchor="middle" class="l">子载波索引 k</text><text x="-55" y="180" text-anchor="middle" class="l" transform="rotate(-90 -55 180)">展开相位</text>
+  </g>
+  <rect x="130" y="515" width="840" height="70" rx="12" fill="#edf3f7"/><text x="550" y="545" text-anchor="middle" class="l">φ̂[t,k] ≈ φchannel[t,k] + φcommon[t] + α[t]k + ε[t,k]</text><text x="550" y="572" text-anchor="middle" class="n">不同颜色只是概念分解；真实测量中各项并不会自动分开。</text>
+</svg>

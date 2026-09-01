@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="560" viewBox="0 0 960 560">
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0,0 L0,6 L9,3 z" fill="#173b57"/></marker>
+    <style>text{font-family:'Microsoft YaHei','Noto Sans CJK SC',sans-serif;fill:#173b57}.title{font-size:28px;font-weight:700}.label{font-size:20px}.note{font-size:17px;fill:#52697b}.axis{stroke:#52697b;stroke-width:2}.grid{stroke:#d8e2e8;stroke-width:1}.vec{stroke:#0b84a5;stroke-width:5}.proj{stroke:#f26b38;stroke-width:3;stroke-dasharray:8 7}</style>
+  </defs>
+  <rect width="960" height="560" fill="#fbfdff"/>
+  <text x="480" y="42" text-anchor="middle" class="title">复数 CSI：I/Q、幅度与相位</text>
+  <g transform="translate(140,470)">
+    <line x1="0" y1="0" x2="680" y2="0" class="axis" marker-end="url(#arrow)"/>
+    <line x1="0" y1="0" x2="0" y2="-350" class="axis" marker-end="url(#arrow)"/>
+    <g class="grid">
+      <line x1="100" y1="0" x2="100" y2="-340"/><line x1="200" y1="0" x2="200" y2="-340"/><line x1="300" y1="0" x2="300" y2="-340"/><line x1="400" y1="0" x2="400" y2="-340"/><line x1="500" y1="0" x2="500" y2="-340"/><line x1="600" y1="0" x2="600" y2="-340"/>
+      <line x1="0" y1="-100" x2="670" y2="-100"/><line x1="0" y1="-200" x2="670" y2="-200"/><line x1="0" y1="-300" x2="670" y2="-300"/>
+    </g>
+    <line x1="0" y1="0" x2="480" y2="-280" class="vec" marker-end="url(#arrow)"/>
+    <line x1="480" y1="-280" x2="480" y2="0" class="proj"/>
+    <line x1="0" y1="-280" x2="480" y2="-280" class="proj"/>
+    <path d="M95 0 A95 95 0 0 0 82 -48" fill="none" stroke="#7c4dff" stroke-width="4"/>
+    <text x="350" y="-165" class="label" fill="#0b84a5">|H| = √(I²+Q²)</text>
+    <text x="225" y="34" class="label">I = Re(H)</text>
+    <text x="-120" y="-180" class="label" transform="rotate(-90 -120 -180)">Q = Im(H)</text>
+    <text x="490" y="-135" class="label" fill="#f26b38">Q</text>
+    <text x="235" y="-290" class="label" fill="#f26b38">I</text>
+    <text x="105" y="-52" class="label" fill="#7c4dff">φ = atan2(Q,I)</text>
+    <circle cx="480" cy="-280" r="7" fill="#0b84a5"/>
+  </g>
+  <text x="480" y="535" text-anchor="middle" class="note">一个子载波、一个数据包对应复平面上的一个点；人体运动会使点随时间移动。</text>
+</svg>

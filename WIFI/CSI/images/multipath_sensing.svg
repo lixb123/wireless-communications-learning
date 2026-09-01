@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="600" viewBox="0 0 1100 600">
+  <defs><marker id="a" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0 0L0 6L9 3z" fill="currentColor"/></marker><style>text{font-family:'Microsoft YaHei','Noto Sans CJK SC',sans-serif;fill:#173b57}.t{font-size:28px;font-weight:700}.l{font-size:19px}.n{font-size:16px;fill:#52697b}.wall{stroke:#8ba3b5;stroke-width:14}.direct{stroke:#0b84a5;stroke-width:5;fill:none;color:#0b84a5}.static{stroke:#7c4dff;stroke-width:4;fill:none;color:#7c4dff}.dynamic{stroke:#f26b38;stroke-width:5;fill:none;color:#f26b38;stroke-dasharray:12 7}</style></defs>
+  <rect width="1100" height="600" fill="#fbfdff"/><text x="550" y="42" text-anchor="middle" class="t">室内多径如何把人体运动写入 CSI</text>
+  <line x1="80" y1="105" x2="1020" y2="105" class="wall"/><line x1="80" y1="520" x2="1020" y2="520" class="wall"/>
+  <g transform="translate(155,280)"><rect x="-45" y="-55" width="90" height="110" rx="12" fill="#d8eef4" stroke="#0b84a5" stroke-width="3"/><path d="M-5 -75q55 20 0 40M-5 -95q85 30 0 60" fill="none" stroke="#0b84a5" stroke-width="4"/><text x="0" y="10" text-anchor="middle" class="l">TX</text></g>
+  <g transform="translate(945,280)"><rect x="-45" y="-55" width="90" height="110" rx="12" fill="#e6e0ff" stroke="#7c4dff" stroke-width="3"/><text x="0" y="10" text-anchor="middle" class="l">RX</text></g>
+  <g transform="translate(590,315)"><circle cx="0" cy="-85" r="28" fill="#ffd6c7" stroke="#f26b38" stroke-width="3"/><path d="M0 -56L0 30M0 -20L-55 15M0 -20L50 -5M0 30L-40 95M0 30L45 90" fill="none" stroke="#f26b38" stroke-width="8" stroke-linecap="round"/><text x="0" y="130" text-anchor="middle" class="l">运动人体</text></g>
+  <path d="M205 280L895 280" class="direct" marker-end="url(#a)"/><text x="410" y="265" class="l" fill="#0b84a5">直达路径</text>
+  <path d="M200 250Q520 85 900 250" class="static" marker-end="url(#a)"/><text x="420" y="130" class="l" fill="#7c4dff">墙面静态反射</text>
+  <path d="M205 300Q420 430 555 315Q750 430 900 305" class="dynamic" marker-end="url(#a)"/><text x="390" y="465" class="l" fill="#f26b38">人体动态反射：路径长度与复增益随动作变化</text>
+  <text x="550" y="565" text-anchor="middle" class="n">接收端看到的是所有路径的相干叠加 H(f,t)=Σ aₚ(t)e⁻ʲ²πfτₚ(t)，不是一条路径的独立读数。</text>
+</svg>

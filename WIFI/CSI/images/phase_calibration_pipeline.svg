@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="560" viewBox="0 0 1200 560">
+  <defs><marker id="a" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0 0L0 6L9 3z" fill="#52697b"/></marker><style>text{font-family:'Microsoft YaHei','Noto Sans CJK SC',sans-serif;fill:#173b57}.t{font-size:28px;font-weight:700}.h{font-size:19px;font-weight:700}.n{font-size:15px;fill:#52697b}.box{stroke-width:2;rx:14}.arr{stroke:#52697b;stroke-width:3;fill:none;marker-end:url(#a)}</style></defs>
+  <rect width="1200" height="560" fill="#fbfdff"/><text x="600" y="42" text-anchor="middle" class="t">复数 CSI 相位校正与验证流程</text>
+  <g transform="translate(35,105)">
+    <rect x="0" y="0" width="170" height="115" fill="#d8eef4" stroke="#0b84a5" class="box"/><text x="85" y="35" text-anchor="middle" class="h">1. 原始 I/Q</text><text x="85" y="65" text-anchor="middle" class="n">按 int8 与固件布局解析</text><text x="85" y="88" text-anchor="middle" class="n">保留时间戳和质量元数据</text>
+    <path d="M175 58L220 58" class="arr"/>
+    <rect x="225" y="0" width="170" height="115" fill="#e6e0ff" stroke="#7c4dff" class="box"/><text x="310" y="35" text-anchor="middle" class="h">2. 硬质检</text><text x="310" y="65" text-anchor="middle" class="n">长度、LTF、有效子载波</text><text x="310" y="88" text-anchor="middle" class="n">丢包、饱和、无效首字</text>
+    <path d="M400 58L445 58" class="arr"/>
+    <rect x="450" y="0" width="170" height="115" fill="#fff0db" stroke="#f7b267" class="box"/><text x="535" y="35" text-anchor="middle" class="h">3. 相对校正</text><text x="535" y="65" text-anchor="middle" class="n">去线性趋势 / 共轭差分</text><text x="535" y="88" text-anchor="middle" class="n">公共旋转与圆统计</text>
+    <path d="M625 58L670 58" class="arr"/>
+    <rect x="675" y="0" width="170" height="115" fill="#e3f3e8" stroke="#4aa564" class="box"/><text x="760" y="35" text-anchor="middle" class="h">4. 稳定表示</text><text x="760" y="65" text-anchor="middle" class="n">sin/cos、单位复数</text><text x="760" y="88" text-anchor="middle" class="n">动态残差、有效 Doppler</text>
+    <path d="M850 58L895 58" class="arr"/>
+    <rect x="900" y="0" width="225" height="115" fill="#fde2dc" stroke="#f26b38" class="box"/><text x="1012" y="35" text-anchor="middle" class="h">5. 校正验证</text><text x="1012" y="65" text-anchor="middle" class="n">空房稳定度与周期运动复现</text><text x="1012" y="88" text-anchor="middle" class="n">跨 session/设备/日期测试</text>
+  </g>
+  <g transform="translate(125,315)"><rect x="0" y="0" width="950" height="160" rx="16" fill="#edf3f7"/><text x="475" y="35" text-anchor="middle" class="h">校正不是“把相位变平”</text><text x="50" y="72" class="n">• 要删除的是硬件公共项和不可靠跳变；要保留的是与人体动态有关的相对时频结构。</text><text x="50" y="103" class="n">• 去趋势会同时删除真实绝对时延的线性相位，因此不再适合宣称测距。</text><text x="50" y="134" class="n">• 每一种校正都必须用空房、静止人体、周期运动和跨域数据证明“更稳定且仍保留动作信息”。</text></g>
+</svg>
